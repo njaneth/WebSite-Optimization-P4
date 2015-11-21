@@ -1,4 +1,4 @@
-# **Website Performance Optimization portfolio project 4*
+# **Website Performance Optimization portfolio project 4**
 
 This is an optimized online portfolio for speed! The goal was to make Cam's Pizzeria website run jank-free at 60 frames per second.
 
