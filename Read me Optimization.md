@@ -1,4 +1,4 @@
-## **Website Performance Optimization portfolio project 4**
+# **Website Performance Optimization portfolio project 4*
 
 This is an optimized online portfolio for speed! The goal was to make Cam's Pizzeria website run jank-free at 60 frames per second.
 
@@ -8,10 +8,10 @@ To run, you can install the project on your machine by, either clone the reposit
 
 To view the optimized page, double-click index.html.
 
-#_First_ 
+##_First_ 
 To get the 60fps , I use the timeline of devtools to measure the time it takes to Render and Paint the elements of the page.
 
-# Optimizations in main.js:
+## Optimizations in main.js:
 
 - To stop Forced Synchronous Layout : Change the function changePizzaSizes in line 425
 - Move `var pizzasDiv = document.getElementById("randomPizzas");` in line 460 out the loop
@@ -19,11 +19,11 @@ To get the 60fps , I use the timeline of devtools to measure the time it takes t
 - Change the loop that generates the sliding pizzas when the page loads by adding a new variable `var myFragment = document.createDocumentFragment();`
 - Also in line 525 I use `window.innerHeight` to calculate the number of pizzas dependin the size of the window.
 
-# Optimization on the images:
+## Optimization on the images:
 - pizzeria.jpg from 2314.53Kb to 61.23Kb 
 - pizza.png from 50Kb to 18Kb
 
-#Optimization on style.css:
+##Optimization on style.css:
 - Add to `.mover`:
 	* -webkit-backface-visibility: hidden;
   	* backface-visibility: hidden;
@@ -38,7 +38,7 @@ To get the 60fps , I use the timeline of devtools to measure the time it takes t
 - And in bootstrap-grid.css
 	* Add webkit-trasnform: translate(0px, 0px); will-change: transform; to img.
 
-# Some helpfull sites:
+## Some helpfull sites:
 http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css
 https://developer.mozilla.org/en-US/docs/Web/API/Window/innerHeight
 http://optimizilla.com/
